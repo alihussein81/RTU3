@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet"></link>
+	<title>عنوان الصفحة</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- لجعل الصفحة ملائمة لحجم الشاشة -->
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<style>
+		h1 {
+			text-align: center;
+			font-family: Cairo;
+			font-size: 18px;
+		}
+		h2 {
+			text-align: center;
+			font-family: Cairo;
+			font-size: 18px;
+		}
+		img {
+			display: block;
+			margin: auto; /* توسيط الصورة */
+			max-width: 100%; /* تحديد عرض الصورة كحد أقصى */
+			height: auto; /* تعديل الارتفاع تلقائيًا وفقًا للعرض */
+		}
+	</style>
+</head>
+<body>
+	<h1>قسم السيطرة والتشغيل و الاتصالات الرئيسي</h1>
+	<h2>موقف توليد الشبكة الوطنية</h2> 
+	<img id="myImage" src="https://drive.google.com/uc?id=1-hyy9GvKL590mtxBN_V4MUUiRWzz-KAT" alt="صورة">
+	<script>
+		function updateImage() {
+			var img = document.getElementById("myImage");
+			img.src = "https://drive.google.com/uc?id=1-hyy9GvKL590mtxBN_V4MUUiRWzz-KAT" + "&timestamp=" + new Date().getTime();
+			// إضافة التوقيت الحالي كمعرّف للصورة لتجنب الاحتفاظ بالنسخة المخزنة في الذاكرة المؤقتة للمتصفح
+		}
+		setInterval(updateImage, 10000); // تحديث الصورة كل 10 ثوانٍ
+	</script>
+</body>
+</html>

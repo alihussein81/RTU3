@@ -1,0 +1,9 @@
+<?php
+$host="localhost";
+$user="root";
+$password="";
+$database="rtu";
+$connect=mysqli_connect($host,$user,$password,$database);
+date_default_timezone_set("Asia/Baghdad");
+mysqli_set_charset($connect,'utf8');
+?>
